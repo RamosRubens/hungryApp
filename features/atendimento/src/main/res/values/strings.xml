@@ -1,0 +1,16 @@
+<resources>
+    <!-- Comunicacao com backend -->
+    <string name="dialogFlow_server_url">https://projeto-receitas-app.herokuapp.com/api/</string>
+    <string name="dialogFlow_server_error">Ops! Aconteceu um erro, tente novamente!</string>
+    <string name="login">Login</string>
+
+    <!-- Conversa com  Bot -->
+    <string name="comecarConversa">Começar conversa</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="generic_error">Não foi possível executar a operação</string>
+    <string name="enviarMensagem">Enviar</string>
+    <string name="inicioConversa">Comigo você pode tirar as suas duvidas.</string>
+    <string name="terminarConversa">Encerrar</string>
+    <string name="hintPergunta">O que deseja saber?</string>
+    <string name="aguarde">Aguarde ...</string>
+</resources>

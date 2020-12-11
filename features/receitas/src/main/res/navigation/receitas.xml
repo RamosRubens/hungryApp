@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receitas"
+    app:startDestination="@id/receitaFragment">
+
+    <fragment
+        android:id="@+id/receitaFragment"
+        android:name="br.com.receitas.view.fragments.ReceitasFragment"
+        tools:layout="@layout/fragment_receitas">
+        <action android:id="@+id/action_receita_fragment_to_detalhe_fragment"
+            app:destination="@+id/detalheFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.com.receitas.view.fragments.DetalheReceitaFragment"
+        tools:layout="@layout/fragment_detalhe_receita">
+        <action android:id="@+id/action_detalhe_fragment_to_receita_fragment"
+            app:destination="@+id/receitaFragment"/>
+        <action android:id="@+id/action_detalhe_fragment_to_mapa_activity"
+            app:destination="@+id/MapaActivity"/>
+        <argument
+            android:name="receita"
+            app:argType="integer"
+            android:defaultValue="1"/>
+    </fragment>
+    <activity
+        android:id="@+id/MapaActivity"
+        android:name="br.com.receitas.view.activities.MapsActivity"
+        tools:layout="@layout/activity_maps"/>
+</navigation>

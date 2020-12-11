@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hungryApp</string>
+    <string name="title_login">login</string>
+    <string name="title_receitas">Receitas</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_atendimento">Atendimento</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.login.view.fragmets.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_esqueceu_senha_fragment"
+            app:destination="@id/esqueceuSenhaFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_cadastro_usuario_fragment"
+            app:destination="@+id/cadastroUsuarioFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroUsuarioFragment"
+        android:name="br.com.login.view.fragmets.CadastroUsuarioFragment"
+        tools:layout="@layout/fragment_cadastro_usuario">
+        <action
+            android:id="@+id/action_cadasatroUsuarioFragment_to_LoginFragment"
+            app:destination="@+id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/esqueceuSenhaFragment"
+        android:name="br.com.login.view.fragmets.EsqueceuSenhaFragment"
+        tools:layout="@layout/fragment_esqueceu_senha">
+        <action
+            android:id="@+id/action_esqueceuFragment_to_LoginFragment"
+            app:destination="@+id/loginFragment"/>
+    </fragment>
+</navigation>

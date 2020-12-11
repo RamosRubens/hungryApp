@@ -1,0 +1,22 @@
+<resources>
+    <!-- Comunicacao com backend -->
+    <string name="dialogFlow_server_url">https://projeto-receitas-app.herokuapp.com/api/</string>
+    <string name="dialogFlow_server_error">Ops! Aconteceu um erro, tente novamente!</string>
+
+    <!-- Menu -->
+    <string name="receitas">Receitas</string>
+    <string name="duvidas">Dúvidas</string>
+    <string name="diaria">Receita Diaria</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_login">Login</string>
+
+    <!-- Detalhe Ingrediente -->
+    <string name="encontrarIngredientes">Onde Encontrar os ingredientes?</string>
+    <string name="curtidas">%s curtidas</string>
+    <string name="serve">Serve: %s pessoa(s)</string>
+    <string name="tempoPreparo">Tempo de preparo: %s min</string>
+    <string name="dificuldade">Dificuldade: %s </string>
+    <string name="title_receitas">Receitas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

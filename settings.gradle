@@ -1,0 +1,5 @@
+include ':features:atendimento'
+include ':features:receitas'
+include ':features:login'
+include ':app'
+rootProject.name = "hungryApp"
